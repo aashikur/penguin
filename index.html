@@ -1,21 +1,171 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    <title>Document</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <title>Penguin Fashion - The Best Quality and Price Ever Win</title>
+    <style>
+        img{
+            width: 100%;
+        }
+        .content-center {
+            max-width: 1170px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media screen and (max-width: 1200px) {
+            .content-center {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+
+        @media screen and (max-width: 556px) {
+            .content-center {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <!-- nav section  -->
-     <nav class="flex">
-        <div><h1>Logo</h1></div>
-        <div><ul class="flex justify-between">
-            <li><a href="#0">Home</a></li>
-            <li><a href="#0">About</a></li>
-            <li><a href="#0">Gallery</a></li>
-            <li><a href="@0">Mission</a></li>
-        </ul></div>
-     </nav>
+    <!-- Navigation -->
+    <nav class="flex content-center justify-between py-4 bg-pink-100">
+        <div class="logo">
+            <img src="img/logo-full.png" alt="logo">
+        </div>
+        <menu>
+            <ul class="flex gap-4">
+                <li><a href="#0">Home</a></li>
+                <li><a href="#0">Product</a></li>
+                <li><a href="#0">About Us</a></li>
+                <li><a href="#0">Contact Us</a></li>
+            </ul>
+        </menu>
+    </nav>
+
+    <!-- Hero Section   -->
+    <section class="hero">
+        <div class="hero-content content-center flex items-center justify-between gap-5">
+            <div class="content-left">
+                <h1 class="text-4xl font-semibold"><span class="text-yellow-400 ">BE THE PENGUINS </span><br>OF WINTER
+                </h1>
+                <p>Lorem Ipsum is simply dummy text of the printing
+                    <br>and typesetting industry.
+                </p>
+                <a href="#0" class="inline-flex gap-2 btn bg-green-600 text-white py-4 px-6">
+                    <svg class="w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                    </svg>
+                    <span>BUY NOW</span>
+                </a>
+            </div>
+            <div class="content-right w-80"><img src="img/model.png" alt="img"></div>
+        </div>
+    </section>
+
+    <!-- Women Card Section  -->
+    <section class="cards">
+        <div class="cards-content content-center">
+            <h1 class="content-center text-4xl pb-5">WOMAN JACKET</h1>
+            <!-- cards wrapper  -->
+            <div class="cards-wrapper flex justify-between">
+                <!-- first card  -->
+                <div class="card">
+                    <img src="img/jacket-1.png" alt="img">
+                    <h3>Yellow Coat JACKET</h3>
+                    <p class="max-w-80">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, nisi?</p>
+                    <div class="price flex items-center justify-between">
+                        <span>$234</span>
+                        <a href="#0" class="inline-flex gap-2 btn bg-green-600 text-white py-4 px-6">
+                            <svg class="w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                            </svg>
+                            <span>BUY NOW</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- second card  -->
+                <div class="card">
+                    <img src="img/jacket-2.png" alt="img">
+                    <h3>Yellow Coat JACKET</h3>
+                    <p class="max-w-80">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, nisi?</p>
+                    <div class="price"><span>$234</span>
+                        <a href="#0" class="inline-flex gap-2 btn bg-green-600 text-white py-4 px-6">
+                            <svg class="w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                            </svg>
+                            <span>BUY NOW</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- third card  -->
+                <div class="card">
+                    <img src="img/jacket-3.png" alt="img">
+                    <h3>Yellow Coat JACKET</h3>
+                    <p class="max-w-80">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, nisi?</p>
+                    <div class="price"><span>$234</span>
+                        <a href="#0" class="inline-flex gap-2 btn bg-green-600 text-white py-4 px-6">
+                            <svg class="w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                            </svg>
+                            <span>BUY NOW</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Store Branding  -->
+    <section class="store mt-10">
+        <div class="flex justify-between content-center">
+            <div class="store-left flex  flex-col  gap-2">
+                <!-- single notice  -->
+                <div class="notice flex gap-2">
+                    <img src="img/question.png" alt="img">
+                    <div class="notic-text">
+                        <h4 class="text-lg font-semibold">Find the Product Fit</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, ad.</p>
+                    </div>
+                </div>
+                  <!-- single notice  -->
+                  <div class="notice flex gap-2">
+                    <img src="img/box.png" alt="img">
+                    <div class="notic-text">
+                        <h4 class="text-lg font-semibold">Find the Product Fit</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, ad.</p>
+                    </div>
+                </div>
+                  <!-- single notice  -->
+                  <div class="notice flex gap-2">
+                    <img src="img/house.png" alt="img">
+                    <div class="notic-text">
+                        <h4 class="text-lg font-semibold">Find the Product Fit</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, ad.</p>
+                    </div>
+                </div>
+                
+            </div>
+            <div>
+                <img src="img/shopping.png" alt="">
+            </div>
+        </div>
+    </section>
+
 </body>
-</html> 
+
+</html>
